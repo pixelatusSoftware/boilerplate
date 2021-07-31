@@ -3,7 +3,7 @@
 const express = require('express')
 const helmet = require('helmet')
 const cors = require('cors')
-require('dotenv').config({ path: '../.env'})
+require('dotenv').config()
 
 const app = express()
 
