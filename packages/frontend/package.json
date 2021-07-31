@@ -1,0 +1,26 @@
+{
+  "name": "frontend",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Florin C",
+  "homepage": "https://github.com/pixelatusSoftware/any-convert#readme",
+  "license": "ISC",
+  "main": "src/frontend.js",
+  "directories": {
+    "src": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pixelatusSoftware/any-convert.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/pixelatusSoftware/any-convert/issues"
+  }
+}
