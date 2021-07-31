@@ -1,0 +1,29 @@
+version: '3'
+services:
+  backend:
+    container_name: any-convert-backend
+    build:
+      context: ./packages/backend/
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./packages/backend/src:/app/src
+      - /src/app/node_modules # Remove this if you have pure JS dependencies
+    command: npm start
+    ports:
+      - "9000:9000"
+    environment:
+      NODE_ENV: development
+      PORT: 9000
+  frontend:
+    container_name: any-convert-frontend
+    build:
+      context: ./packages/frontend/
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./packages/frontend/src:/app/src
+      - /src/app/node_modules # Remove this if you have pure JS dependencies
+    command: npm start
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: development

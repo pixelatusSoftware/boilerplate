@@ -18,7 +18,8 @@
     "url": "git+https://github.com/pixelatusSoftware/any-convert.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "start": "nodemon src/app.js"
   },
   "bugs": {
     "url": "https://github.com/pixelatusSoftware/any-convert/issues"
@@ -27,6 +28,7 @@
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "helmet": "^4.6.0"
+    "helmet": "^4.6.0",
+    "nodemon": "^2.0.12"
   }
 }
